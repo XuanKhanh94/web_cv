@@ -1,13 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-
-NotFound.propTypes = {
-    
-};
+import './style.scss'
 
 function NotFound(props) {
     return (
-        <div>
+        <div className='not__found'>
             not found
         </div>
     );
