@@ -1,6 +1,13 @@
 import React, { useEffect } from "react";
+import { Link, Route, Switch } from "react-router-dom";
 import productApi from "./api/productApi";
+import AlbumFeature from "./features/Album";
 import Header from "./component/Header";
+import NotFound from "./component/NotFound";
+import TodoFeature from "./features/Todo";
+import { Button } from "@mui/material";
+import Content from "./features/Content";
+
 
 function App() {
   useEffect(() => {
@@ -15,18 +22,15 @@ function App() {
   }, [])
   return (
     <div className="App">
-      {/* 
-      <p>
-        <Link to='/todo'>Todo</Link>
-      </p>
-      <Button variant="contained" color="success" size="medium"><Link to="/album">Album</Link> </Button>
+      <Header />
+      <Content />
       <Switch>
-
-        <Route path='/todo' component={TodoFeature} />
+        <Route path='/' />
+        <Route path='/todos' component={TodoFeature} />
         <Route path="/album" component={AlbumFeature} />
         <Route component={NotFound} />
-      </Switch> */}
-      <Header />
+      </Switch>
+
 
     </div>
   );

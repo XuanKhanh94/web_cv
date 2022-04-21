@@ -1,0 +1,1 @@
+.container{display:flex;justify-content:space-between;padding:13px 5%;height:1500px;position:relative;flex-direction:column}.container .sticky{position:-webkit-sticky;position:sticky;margin-top:400px;top:56px;background-color:orange;padding:50px;font-size:20px}
